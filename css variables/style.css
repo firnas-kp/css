@@ -1,0 +1,14 @@
+:root{
+    --main-color: aqua;
+    --padding-size: 10px;
+}
+.box{
+    background-color: var(--main-color);
+    padding: var(--padding-size);
+    border: 1px dashed rgb(37, 9, 9);
+    width: 300px;
+    font-weight: bold;
+    margin: 40px auto;
+    text-align: center;
+    color: black;
+}

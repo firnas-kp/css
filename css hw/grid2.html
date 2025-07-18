@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Screen Grid Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    body, html {
+      height: 100%;
+      background-color: #000;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      height: 100vh;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    header, footer {
+      background-color: #6525f1;
+      color: white;
+      padding: 20px;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 20px;
+    }
+
+    .sidebar {
+      background-color: #28dcd3;
+      padding: 20px;
+      color: white;
+    }
+
+    .content-area {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .content1 {
+      background: linear-gradient(#119cae,rgb(79, 79, 230),rgb(77, 168, 198));
+      padding: 20px;
+      flex: 1;
+      color: white;
+    }
+
+    .bottom-row {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+
+    .content2, .content3 {
+      background: linear-gradient(#14ad8c,rgb(79, 79, 230),rgb(77, 168, 198));
+      padding: 20px;
+      flex: 1;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Header</header>
+
+    <div class="main">
+      <aside class="sidebar">Sidebar</aside>
+      
+      <div class="content-area">
+        <div class="content1">Content 1</div>
+        <div class="bottom-row">
+          <div class="content2">Content 2</div>
+          <div class="content3">Content 3</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>
