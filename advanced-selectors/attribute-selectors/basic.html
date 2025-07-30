@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[required]{    /*1.{attr} - has required*/
+            border: 2px solid red;
+        }
+
+        input[type="email"]{
+            background-color: aqua;
+        }
+
+        div[class~=highlit]{
+            background-color: yellow;
+        }
+        p[lang|="en"]{
+            color: blue;
+        }
+        a[href^="https"]{
+            color: green;
+        }
+        a[href*="about"]{
+            font-weight: bold;
+            text-decoration: underline;
+            color: brown;
+        }
+        img[src$=".jpg"]{
+            border: 2px dashed purple;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS attribute selectors Demo</h2>
+
+    <input type="text" placeholder="your name" required><br><br>
+
+    <input type="email" placeholder="your email"><br><br>
+
+    <div class="box Highlit">Highlited box</div>
+
+    <p lang="en">English paragraph</p>
+</body>
+</html>
