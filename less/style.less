@@ -1,0 +1,24 @@
+@primary-color: rgb(150, 150, 105);
+@font-name: "Segoe UI", sans-serif;
+@padding: 12px;
+@button-radius: 6px;
+@color: white;
+@body-color: black;
+
+body {
+    font-family: @font-name;
+    background-color: lightcoral(@primary-color);
+    padding: @padding;
+    color: @body-color;
+}
+
+h1 {
+    color: @primary-color;
+}
+
+button {
+    background-color: @primary-color;
+    color: @color;
+    padding: @padding;
+    border-radius: @button-radius;
+}

@@ -1,0 +1,15 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: lightcoral(#969669);
+  padding: 12px;
+  color: black;
+}
+h1 {
+  color: #969669;
+}
+button {
+  background-color: #969669;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+}
